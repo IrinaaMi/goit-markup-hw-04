@@ -14,6 +14,7 @@
   --light-color: #434455;
   --white-color: #ffffff;
   --secondary-text-color: #f4f4fd;
+  --icons-color: #8e8f99;
 
   --bg-dark-color: #2e2f42;
   --bg-light-color: #f4f4fd;
@@ -382,7 +383,7 @@ button {
   border-color: var(--hover-focus-color);
 }
 .customers-icon-svg {
-  
+  fill: currentColor;
 }
 
 .customers-link-item {
@@ -391,17 +392,20 @@ button {
   align-items: center;
   width: 100%;
   height: 100%;
-  border: 1px solid #8e8f99;
-  fill: #8e8f99;
+  border: 1px solid var(--icons-color);
+  fill: var(--icons-color);
   border-radius: 4px;
 }
 
 .customers-link-item:hover,
 .customers-link-item:focus {
-  fill: var(--hover-focus-color);
+  color: var(--hover-focus-color);
+  border-color:var(--hover-focus-color);
 }
 /* Footer */
-
+.footer-left-part{
+  margin-right: 120px;
+}
 .footer {
   display: flex;
   background-color: var(--bg-dark-color);
