@@ -116,6 +116,8 @@ button {
 }
 .main-header-container {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav-item {
@@ -349,12 +351,13 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
-  padding-top: 120px;
   padding-bottom: 72px;
 }
 
 .customers-list {
   display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 .customers-list-items {
@@ -363,15 +366,32 @@ button {
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  fill: #8E8F99;;
+  fill: #8e8f99;
 }
-.customers-link{
-  fill: #8E8F99;
+
+.customers-link {
+  fill: #8e8f99;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 16px;
+}
+
+.customers-icons-section {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  border-color: var(--hover-focus-color);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  fill: var(--hover-focus-color);
 }
 /* Footer */
 
 .footer {
-  display: block;
+  display: flex;
   background-color: var(--bg-dark-color);
   font-family: var(--secondary-font);
   height: 312px;
@@ -401,6 +421,35 @@ button {
 }
 .footer-logo-part {
   color: var(--secondary-text-color);
+}
+
+.social-media {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.social-media-container {
+  margin-left: 120px;
+}
+.footer-items {
+  display: flex;
+}
+.social-footer-icon {
+}
+
+.footer-socials {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: #31d0aa;
 }
 
 /* PORTFOLIO */
@@ -447,6 +496,11 @@ button {
   border: 1px solid transparent;
 }
 /* Portfolio list */
+.portfilio-card-item:hover,
+.portfilio-card-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .list-item-name {
   font-weight: 500;
   font-size: 20px;
