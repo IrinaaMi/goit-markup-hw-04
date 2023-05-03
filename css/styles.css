@@ -375,6 +375,7 @@ button {
   width: calc((100% - 120px) / 6);
   height: 88px;
   border-radius: 4px;
+  
 }
 
 .customers-icons-section {
@@ -399,8 +400,8 @@ button {
 
 .customers-link-item:hover,
 .customers-link-item:focus {
-  color: var(--hover-focus-color);
   border-color:var(--hover-focus-color);
+  color: var(--hover-focus-color);
 }
 /* Footer */
 .footer-left-part{
@@ -449,9 +450,6 @@ button {
   margin-bottom: 16px;
 }
 
-.social-media-container {
-  margin-left: 120px;
-}
 .footer-items {
   display: flex;
   align-items: baseline;
